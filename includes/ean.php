@@ -10,7 +10,7 @@ function variation_settings_fields( $loop, $variation_data, $variation ) {
             'id'            => "cod_ean{$loop}",
             'name'          => "cod_ean[{$loop}]",
             'value'         => get_post_meta( $variation->ID, 'cod_ean', true ),
-            'label'         => __( 'EAN', 'woocommerce' ),
+            'label'         => __( 'EAN', 'simple-ean' ),
             'wrapper_class' => 'form-row form-row-full',
         )
     );
@@ -35,7 +35,7 @@ function product_inventory_data() {
             'id'            => "cod_ean",
             'name'          => "cod_ean",
             'value'         => get_post_meta( get_the_ID(), 'cod_ean', true ),
-            'label'         => __( 'EAN', 'woocommerce' ),
+            'label'         => __( 'EAN', 'simple-ean' ),
         )
     );
 }
